@@ -1,8 +1,9 @@
 spec:
-  name: pytkin.ru
-  static_sites:
-    - environment_slug: html
+  name: solves-demo-app
+  services:
+    - build_command: yarn build
+      environment_slug: node-js
       git:
         branch: master
-        repo_clone_url: https://github.com/pytkin/pytkin.ru.git
-      name: pytkin.ru
+        repo_clone_url: https://github.com/pytkin/solves-demo-app.git
+      name: solves-demo-app

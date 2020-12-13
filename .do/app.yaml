@@ -1,8 +1,9 @@
-name: pytkin.ru
-static_sites:
-  - environment_slug: html
+name: solves-demo-app
+services:
+  - build_command: yarn build
+    environment_slug: node-js
     github:
       branch: master
       deploy_on_push: true
-      repo: pytkin/pytkin.ru
-    name: pytkin.ru
+      repo: pytkin/solves-demo-app
+    name: solves-demo-app
