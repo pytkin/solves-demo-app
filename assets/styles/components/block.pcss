@@ -1,0 +1,65 @@
+.block {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+
+  &-text {
+    padding: 0.5rem 1rem;
+
+    &.block-editing {
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    h3 {
+      margin-bottom: 0;
+
+      &.with-placeholder {
+        opacity: 0.5;
+      }
+    }
+
+    .form-control {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &-image {
+    img {
+      max-width: 100%;
+      min-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.block-actions {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+
+  .btn {
+    flex: 0 0 auto;
+    opacity: 0.8;
+
+    + .btn {
+      margin-left: 8px;
+    }
+
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
+
+.block-edit-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .btn + .btn {
+    margin-left: 0.5rem;
+  }
+}

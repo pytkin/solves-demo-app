@@ -1,0 +1,29 @@
+.hello-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &-enter-active {
+    animation: fadeIn 0.3s ease-in;
+  }
+
+  &-leave-active {
+    animation: fadeOut 0.3s ease-out;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.constructor-screen {
+  min-height: 100vh;
+
+  .add-block-holder {
+    text-align: center;
+    padding: 24px 0;
+  }
+}

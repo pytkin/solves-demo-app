@@ -1,0 +1,26 @@
+.image-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 -6px -8px;
+
+  .image-wrap {
+    flex: 0 0 auto;
+    width: calc(33.3334% - 12px);
+    margin: 0 6px 8px;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    &.is-selected {
+      border-color: #007bff;
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
