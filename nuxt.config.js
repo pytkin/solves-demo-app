@@ -5,7 +5,7 @@ export default {
   */
   target: 'static',
   router: {
-    base: '/solves-demo-app/'
+    base: '/solves-demo/'
   },
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,

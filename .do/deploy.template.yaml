@@ -1,9 +1,0 @@
-spec:
-  name: solves-demo-app
-  services:
-    - build_command: yarn build
-      environment_slug: node-js
-      git:
-        branch: master
-        repo_clone_url: https://github.com/pytkin/solves-demo-app.git
-      name: solves-demo-app
