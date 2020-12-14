@@ -69,7 +69,9 @@ export default defineComponent({
 
     onMounted(() => {
       const ref: any = context.refs.blockTextInput
-      ref.$el.focus()
+      if (ref?.$el) {
+        ref.$el.focus()
+      }
     })
 
     return { handleSave, handleCancel, handleEdit }
